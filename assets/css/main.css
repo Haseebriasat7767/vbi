@@ -714,3 +714,18 @@ input[type='date']::-webkit-calendar-picker-indicator{filter:invert(.7) sepia(.3
   .plan-legend{order:2}
   .enquire__facts dd{text-align:right}
 }
+
+/* ======================================================== touch comfort === */
+/* Markers, tools and nav must all clear a 44px target on touch devices, so
+   the hit area grows without the drawing growing with it. */
+@media (hover: none), (pointer: coarse){
+  .hotspot::after{content:'';position:absolute;inset:-8px;border-radius:50%}
+  .tool{min-height:44px}
+  .btn{min-height:48px}
+  .level-btn{min-height:56px}
+  .lightbox__nav{min-width:48px;min-height:48px}
+  .marker-index__btn{min-height:48px}
+  .plan-legend__btn{min-height:44px}
+  .link-arrow{min-height:44px;align-items:center}
+  .nav__link{padding-block:.4rem}
+}
