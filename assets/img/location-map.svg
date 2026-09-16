@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Simplified coastal map showing the residence and four approximate travel times.">
+  <title>Situation map — Aurelia House</title>
+  <desc>An abstract map of the coast around the residence, with approximated distances to the central district, the international airport, a private marina and an international school. Illustrative only.</desc>
+
+  <defs>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M100 0H0V100" fill="none" stroke="#F4F0E8" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+    <pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#7C93A0" stroke-opacity=".14" stroke-width="1"/>
+    </pattern>
+    <clipPath id="seaClip">
+      <path id="seaPath" d="M0 588 C120 566 240 548 360 566 C470 582 560 606 660 584 C760 562 850 522 950 512 C1050 502 1140 500 1200 494 L1200 900 L0 900 Z"/>
+    </clipPath>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A878" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#C8A878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="#0F0F0E"/>
+  <rect width="1200" height="900" fill="url(#grid)"/>
+
+  <!-- sea -->
+  <rect width="1200" height="900" fill="#0B1419" clip-path="url(#seaClip)"/>
+  <rect width="1200" height="900" fill="url(#hatch)" clip-path="url(#seaClip)" opacity=".55"/>
+
+  <!-- land contours -->
+  <g fill="none" stroke="#F4F0E8" stroke-opacity=".07" stroke-width="1.4" stroke-linecap="round">
+    <path d="M60 470 C220 420 320 470 470 430 C600 396 700 430 820 396"/>
+    <path d="M40 380 C200 336 330 380 470 340 C620 298 760 330 900 292 C1010 262 1120 276 1200 250"/>
+    <path d="M120 286 C260 250 380 288 520 246 C660 204 800 236 940 196"/>
+    <path d="M220 186 C360 158 470 190 600 152 C720 118 850 148 980 112"/>
+  </g>
+
+  <!-- roads -->
+  <g fill="none" stroke="#F4F0E8" stroke-opacity=".1" stroke-width="1.6" stroke-linecap="round">
+    <path d="M120 900 C170 720 210 600 300 470 C360 386 430 340 560 318 C700 294 860 300 1010 250"/>
+    <path d="M620 512 C660 470 700 420 720 360 C742 292 760 230 812 168"/>
+    <path d="M300 470 C420 500 500 520 620 512"/>
+    <path d="M170 560 C220 520 260 496 300 470"/>
+  </g>
+
+  <!-- coastline -->
+  <path d="M0 588 C120 566 240 548 360 566 C470 582 560 606 660 584 C760 562 850 522 950 512 C1050 502 1140 500 1200 494"
+        fill="none" stroke="#F4F0E8" stroke-opacity=".42" stroke-width="1.6"/>
+
+  <!-- private jetty / marina approach -->
+  <g stroke="#F4F0E8" stroke-opacity=".22" stroke-width="1.2" fill="none">
+    <path d="M902 566 L932 656"/>
+    <path d="M918 618 L968 606"/>
+  </g>
+
+  <!-- travel time connectors -->
+  <g stroke="#C8A878" stroke-opacity=".45" stroke-width="1" fill="none" stroke-dasharray="3 5">
+    <path d="M620 512 C520 440 420 300 330 200"/>
+    <path d="M620 512 C700 460 860 340 1000 176"/>
+    <path d="M620 512 C700 560 820 630 900 656"/>
+    <path d="M620 512 C480 540 320 530 200 502"/>
+  </g>
+
+  <!-- residence -->
+  <circle cx="620" cy="512" r="92" fill="url(#glow)"/>
+  <g transform="translate(620 512)">
+    <path d="M0 -15 L13 0 L0 15 L-13 0 Z" fill="none" stroke="#C8A878" stroke-width="1.3"/>
+    <path d="M0 -6 L5.5 0 L0 6 L-5.5 0 Z" fill="#C8A878"/>
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#C8A878" stroke-opacity=".28" stroke-width="1"/>
+  </g>
+  <text x="620" y="556" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2.6" fill="#F4F0E8">AURELIA HOUSE</text>
+  <text x="620" y="576" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="11.5" letter-spacing="2" fill="#9B9B95">WATERFRONT PLOT</text>
+
+  <!-- destinations -->
+  <g font-family="Inter, Helvetica, Arial, sans-serif">
+    <!-- central district -->
+    <circle cx="330" cy="200" r="5" fill="none" stroke="#F4F0E8" stroke-opacity=".7" stroke-width="1.3"/>
+    <text x="352" y="196" font-size="15.5" letter-spacing="2.4" fill="#F4F0E8" fill-opacity=".74">CENTRAL DISTRICT</text>
+    <text x="352" y="218" font-size="15" letter-spacing="1.6" fill="#C8A878">[8 min]</text>
+
+    <!-- international airport -->
+    <circle cx="1000" cy="176" r="5" fill="none" stroke="#F4F0E8" stroke-opacity=".7" stroke-width="1.3"/>
+    <text x="1022" y="172" text-anchor="end" font-size="15.5" letter-spacing="2.4" fill="#F4F0E8" fill-opacity=".74">INTERNATIONAL AIRPORT</text>
+    <text x="1022" y="194" text-anchor="end" font-size="15" letter-spacing="1.6" fill="#C8A878">[15 min]</text>
+
+    <!-- private marina -->
+    <circle cx="900" cy="656" r="5" fill="none" stroke="#F4F0E8" stroke-opacity=".7" stroke-width="1.3"/>
+    <text x="922" y="652" font-size="15.5" letter-spacing="2.4" fill="#F4F0E8" fill-opacity=".74">PRIVATE MARINA</text>
+    <text x="922" y="674" font-size="15" letter-spacing="1.6" fill="#C8A878">[12 min]</text>
+
+    <!-- international school -->
+    <circle cx="200" cy="502" r="5" fill="none" stroke="#F4F0E8" stroke-opacity=".7" stroke-width="1.3"/>
+    <text x="180" y="536" font-size="15.5" letter-spacing="2.4" fill="#F4F0E8" fill-opacity=".74">INTERNATIONAL SCHOOL</text>
+    <text x="180" y="558" font-size="15" letter-spacing="1.6" fill="#C8A878">[5 min]</text>
+  </g>
+
+  <!-- compass -->
+  <g transform="translate(84 84)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <path d="M0 -22 L9 12 L0 5 L-9 12 Z" fill="#C8A878"/>
+    <text x="0" y="36" text-anchor="middle" font-size="13" letter-spacing="2.4" fill="#9B9B95">N</text>
+  </g>
+
+  <!-- scale -->
+  <g transform="translate(84 812)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <line x1="0" y1="0" x2="240" y2="0" stroke="#F4F0E8" stroke-opacity=".34" stroke-width="1.2"/>
+    <line x1="0" y1="-6" x2="0" y2="6" stroke="#F4F0E8" stroke-opacity=".34" stroke-width="1.2"/>
+    <line x1="120" y1="-6" x2="120" y2="6" stroke="#F4F0E8" stroke-opacity=".34" stroke-width="1.2"/>
+    <line x1="240" y1="-6" x2="240" y2="6" stroke="#F4F0E8" stroke-opacity=".34" stroke-width="1.2"/>
+    <text x="0" y="-16" font-size="13" letter-spacing="1.6" fill="#9B9B95">approx. 2 km</text>
+  </g>
+
+  <!-- key -->
+  <g transform="translate(1076 812)" font-family="Inter, Helvetica, Arial, sans-serif" text-anchor="end">
+    <text x="0" y="0" font-size="12" letter-spacing="2" fill="#9B9B95">ILLUSTRATIVE ONLY</text>
+    <text x="0" y="20" font-size="12" letter-spacing="2" fill="#9B9B95" fill-opacity=".7">NOT TO SCALE</text>
+  </g>
+
+  <!-- inner frame -->
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#F4F0E8" stroke-opacity=".1"/>
+</svg>

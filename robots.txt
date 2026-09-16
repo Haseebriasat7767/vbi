@@ -1,0 +1,5 @@
+# Concept project — replace the domain before publication.
+User-agent: *
+Allow: /
+
+Sitemap: https://aurelia-residences.example/aurelia-house/sitemap.xml
