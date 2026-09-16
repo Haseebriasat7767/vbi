@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Aurelia Residences">
+  <rect width="64" height="64" fill="#0D0D0D"/>
+  <path d="M32 14 46 32 32 50 18 32Z" fill="none" stroke="#C8A878" stroke-width="1.4"/>
+  <path d="M32 22 39 32 32 42 25 32Z" fill="#C8A878" fill-opacity=".5"/>
+</svg>

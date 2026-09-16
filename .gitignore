@@ -1,0 +1,13 @@
+# dependencies (the site itself has none — jsdom is only for the test suite)
+node_modules/
+package-lock.json
+
+# local tooling and generated artefacts
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.cache/
+dist/
+build/
+coverage/
