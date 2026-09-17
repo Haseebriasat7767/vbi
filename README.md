@@ -151,6 +151,16 @@ controller for its public API, marker projection, level switching and disposal, 
 navigation, floor-plan interaction, gallery, form validation, fallbacks, structure and metadata.
 Because jsdom has no WebGL, the suite also proves the "3D unavailable" path rather than assuming it.
 
+## Deploying
+
+The site is static, so Vercel serves it straight from the repository root. `vercel.json` pins the
+settings: `npm run build` regenerates the inline floor plans, the output directory is the root,
+clean URLs are on, and everything under `assets/` is cached for a year while `index.html` is
+revalidated on every request.
+
+The Vercel project is linked to this repository with `main` as the production branch, so a push to
+`main` publishes and any other branch gets a preview URL.
+
 ## Licence and credits
 
 Photography and text are generated for this demonstration. three.js is MIT licensed; Cormorant
